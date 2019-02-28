@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>blueBox</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="icofont\icofont.min.css">
+	
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm navbar-light row bg-white">
+			<div class="col-md-3 text-center">
+				<button class="openbtn d-md-none" onclick="openNav()">☰</button>
+				<a class="navstyle navbar-brand" style="font-size: 35px;color: #3BCCF6;"><b>blueBox</b></a>
+			</div>
+			
+			<div class="d-none  d-md-block col-md-5" >
+
+					<i class="ico icofont-search"></i>
+					<input class="box" type="search" placeholder="Search Project" aria-label="Search">
+				</div>
+				<div class="d-none  d-md-block col-md-4" style="margin-left: 5%;">
+					<ul class="nav navbar-nav">
+					<li>
+						<img src="https://twlskin.vapormanagement.com/wp-content/uploads/2017/06/doctor-profile.jpg" alt="Avtar" class="avtar">
+						<i class="status icofont-ui-press"></i>
+						<span class="name">Angelina Doe
+							<i class="icofont-simple-down" style="color: #6AA5E3;font-size: 16px;position: relative;"></i></span>
+						</li>
+							<li >
+								<p><i class="icofont-envelope" style="color: #C7C7C7;font-size: 20px;position: absolute;bottom: 15px;padding-left:25px;"></i>
+									<i class="red-dot icofont-ui-press"></i></p>
+							</li>	
+							<li >
+								<p><i class="icofont-alarm" style="color: #C7C7C7;font-size: 20px;position: absolute;bottom: 15px; padding-left: 18%"></i>
+									<i class="dot icofont-ui-press"></i></p>
+							</li>
+							<li ><i class="icofont-navigation-menu" style="color: #C7C7C7;font-size: 20px;position: absolute;bottom: 15px;padding-left:31%;"></i>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+				
+			</div>
+
+<!-- col3 -->
+<div id="panel1" class=" d-md-none" style="width: 300px;visibility: collapse;  position: fixed;    z-index: 1000;    background: #fff; padding: 30px;top:0;left:0;padding-top: 35px;">
+					<div  class="sidepanel ">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<div class="mb-3">
+							<p><img src="https://twlskin.vapormanagement.com/wp-content/uploads/2017/06/doctor-profile.jpg" alt="Avtar" class="profile">
+								<b style="font-size: 18px;font-family: Montserrat;position: absolute;color: #707070;font-weight: 700;left: 108px;">Angelina Doe</b><br><span style="font-size: 14px;font-family: Montserrat;color: #707070;position: absolute;top: 57px;left: 108px;font-weight: 300;">Project Manager</span>
+							</p>
+						</div>
+						<div class="btn-group-vertical" style="width: 100%; margin-top: 28px;">
+							<button type="button" class="btn" style="color: #3BCCF6;font-size: 18px;font-family: Montserrat;font-weight: 600; text-align: left;padding: 5% 0%;">Dashboard<i class="icofont-home" style="font-size: 18;color: #3BCCF6;float: right;"></i></button>
+							<button type="button" class="btn-style btn">UI Elements<i class="icofont-group" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Components<i class="icofont-horn" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Forms Stuff<i class="icofont-gift-box" style="color:#707070;font-size: 18;float: right;"></i>
+							</button>
+							<button type="button" class="btn-style btn">Data Table<i class="icofont-table" style="color:#707070;font-size: 18;float: right;"></i>			
+							</button>
+							<button type="button" class="btn-style btn">Icons	<i class="icofont-contrast" style="color:#707070;font-size: 18;float: right;"></i>				
+							</button>
+							<button type="button" class="btn-style btn">Sample Page<i class="icofont-computer" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Extra	<i class="icofont-copy-invert" style="color:#707070;font-size: 18;float: right;"></i>				
+							</button>
+							<button type="button" class="addbtn">Add Project</button>
+						</div>
+					</div>		
+				</div>
+
+			<div class="row container-fluid" style="margin-right: 0px;margin-left:0px;">
+
+				
+
+
+				<div  class="col-md-3 bg-white d-none d-md-block" style="padding: 48px;">
+					<div id="panel" class="sidepanel ">
+						<div class="mb-3">
+							<p><img src="https://twlskin.vapormanagement.com/wp-content/uploads/2017/06/doctor-profile.jpg" alt="Avtar" class="profile">
+								<b style="font-size: 18px;font-family: Montserrat;position: absolute;color: #707070;font-weight: 700;left: 108px;">Angelina Doe</b><br><span style="font-size: 14px;font-family: Montserrat;color: #707070;position: absolute;top: 74px;left: 108px;font-weight: 300;">Project Manager</span>
+							</p>
+						</div>
+						<div class="btn-group-vertical" style="width: 100%; margin-top: 28px;">
+							<button type="button" class="btn" style="color: #3BCCF6;font-size: 18px;font-family: Montserrat;font-weight: 600; text-align: left;padding: 5% 0%;">Dashboard<i class="icofont-home" style="font-size: 18;color: #3BCCF6;float: right;"></i></button>
+							<button type="button" class="btn-style btn">UI Elements<i class="icofont-group" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Components<i class="icofont-horn" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Forms Stuff<i class="icofont-gift-box" style="color:#707070;font-size: 18;float: right;"></i>
+							</button>
+							<button type="button" class="btn-style btn">Data Table<i class="icofont-table" style="color:#707070;font-size: 18;float: right;"></i>			
+							</button>
+							<button type="button" class="btn-style btn">Icons	<i class="icofont-contrast" style="color:#707070;font-size: 18;float: right;"></i>				
+							</button>
+							<button type="button" class="btn-style btn">Sample Page<i class="icofont-computer" style="color:#707070;font-size: 18;float: right;"></i>					
+							</button>
+							<button type="button" class="btn-style btn">Extra	<i class="icofont-copy-invert" style="color:#707070;font-size: 18;float: right;"></i>				
+							</button>
+							<button type="button" class="addbtn">Add Project</button>
+						</div>
+					</div>		
+				</div>
+				<div class="col-md-9 d-block" style="background-color: #F5F5F5;padding: 35px;">
+					<div style="margin-top: 18px;">
+						<i class="icofont-dashboard" style="border-radius: 8px;background-image: linear-gradient(#6FE3FF,#2FC7F5);color: #FFFFFF;font-size: 30px;padding: 7px;"></i><span style="font-size: 24px;font-family: Montserrat; font-weight: 600;color: #707070;padding-left: 10px;">Dashboard</span>
+					</div>
+					<div class="row" style="margin-top: 5%;">
+						<div class="col-md-4">
+							<div class="box1 mb-2">
+								<div>
+									<i class="icofont-dashboard-web" style="color: #FFFFFF;font-size: 35px;"></i>
+									<p style="font-size: 20px;font-family: Montserrat;font-weight: 600;color: #FFFFFF; margin-bottom: 0;margin-top: 5px;">Stock Total</p>
+									<p style="font-size: 32px;font-family: Montserrat;font-weight: 600;color: #FFFFFF;">$150000</p>
+									<p style="font-size: 20px;font-family: Montserrat;font-weight: 600;color: #FFFFFF;    margin-top: 42px;">Increased by 60%</p>
+
+									<p class="circle1 d-none d-md-block"></p>
+									<p class="circle2 d-none d-md-block"></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="box2 mb-2">
+								<div>
+									<i class="icofont-database" style="color: #FFFFFF;font-size: 35px;"></i>
+									<p style="font-size: 20px;0ont-family: Montserrat;font-weight: 600;color: #FFFFFF; margin-bottom: 0;margin-top: 5px;">Total Profit</p>
+									<p style="font-size: 32px;2ont-family: Montserrat;font-weight: 600;color: #FFFFFF;">$25000</p>
+									<p style="font-size: 20px;font-family: Montserrat;font-weight: 600;color: #FFFFFF;    margin-top: 42px;">Increased by 30%</p>
+									<p class="circle1 d-none d-md-block"></p>
+									<p class="circle2 d-none d-md-block"></p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="box3 mb-2">
+								<div>
+									<i class="icofont-flag" style="color: #FFFFFF;font-size: 35px;"></i>
+									<p style="font-size: 20px;font-family: Montserrat;font-weight: 600;color: #FFFFFF; margin-bottom: 0;margin-top: 5px;">Unique Visitors</p>
+									<p style="font-size: 32px;font-family: Montserrat;font-weight: 600;color: #FFFFFF;">$250000</p>
+									<p style="font-size: 20px;font-family: Montserrat;font-weight: 600;color: #FFFFFF;    margin-top: 42px;">Increased by 80%</p>
+									<p class="circle1 d-none d-md-block"></p>
+									<p class="circle2 d-none d-md-block"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shadow" style="background-color: white;margin-top: 3%;padding: 0% 5%;border-radius: 10px;">
+						<p style="font-family: Montserrat;font-size: 24px; font-weight: 600;color: #707070;padding-top: 5%;">Standard Table design</p>
+						<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr >
+									<th style="border-top: 0;">Name</th>
+									<th style="border-top: 0;">Email</th>
+									<th style="border-top: 0;">User Type</th>
+									<th style="border-top: 0;">Joined</th>
+									<th style="border-top: 0;">Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="padding-top:23px;">Mike Bhand</td>
+									<td style="padding-top:23px;">mikebhand@email.com</td>
+									<td style="padding-top:23px;">Admin</td>
+									<td style="padding-top:23px;">25 Apr,2018</td>
+									<td><button class="tbtn text-uppercase" type="button" style="background-image: linear-gradient(#C694F9,#AB64F4)">Pending</button></td>
+								</tr>
+								<tr>
+									<td style="padding-top:23px;">Andrew Strauss</td>
+									<td style="padding-top:23px;">info@yourmail.com</td>
+									<td style="padding-top:23px;">Editor</td>
+									<td style="padding-top:23px;">25 Apr,2018</td>
+									<td><button class="tbtn text-uppercase" type="button" style="background-image: linear-gradient(#6866E9,#6AA5E3);">Approved</button></td>
+								</tr>
+								<tr>
+									<td style="padding-top:23px;">Ross Kopelman</td>
+									<td style="padding-top:23px;">rosskopelman@email.com</td>
+									<td style="padding-top:23px;">Subscriber</td>
+									<td style="padding-top:23px;">25 Apr,2018</td>
+									<td><button class="tbtn text-uppercase" type="button" style="background-image: linear-gradient(#6866E9,#6AA5E3)">Approved</button></td>
+								</tr>
+								<tr>
+									<td style="padding-top:23px;">Mike Hussy</td>
+									<td style="padding-top:23px;">mikehussy@email.com</td>
+									<td style="padding-top:23px;">Admin</td>
+									<td style="padding-top:23px;">25 Apr,2018</td>
+									<td><button class="tbtn text-uppercase" type="button" style="background-image: linear-gradient(#FEB683,#FF8993)">Reject</button></td>
+								</tr>
+								<tr>
+									<td style="padding-top:23px;">Kevin Pietersen</td>
+									<td style="padding-top:23px;">kpietersen@email.com</td>
+									<td style="padding-top:23px;">Admin</td>
+									<td style="padding-top:23px;">25 Apr,2018</td>
+									<td><button class="tbtn text-uppercase" type="button" style="background-image: linear-gradient(#C694F9,#AB64F4)">Pending</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+
+			</div>
+			<script>
+				function openNav() {
+					document.getElementById("panel1").style.visibility = "visible";
+				}
+
+				function closeNav() {
+					document.getElementById("panel1").style.visibility = "collapse";
+				}
+			</script>
+		</body>
+		</html>
